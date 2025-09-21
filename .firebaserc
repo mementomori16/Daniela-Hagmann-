@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "test-1-dd24e",
+    "test-1": "test-1-dd24e"
+  },
+  "targets": {},
+  "etags": {}
+}
