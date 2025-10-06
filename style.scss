@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Google Font CDN Link */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 * {
@@ -125,34 +126,6 @@ nav.sticky .menu-btn {
 }
 
 /* home */
-.availability-notice {
-  background-color: #fffffe; 
-  border: 1px solid #77b707;
-  padding: 15px;
-  margin: 20px auto;
-  max-width: 600px;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  font-family: 'Poppins', sans-serif;
-  h2 {
-    color: #4f830d;
-    font-size: 1.5rem;
-    margin-bottom: 8px;
-  }
-  p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #4f830d;
-    margin-bottom: 10px;
-  }
-  .welcome {
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: #4f830d;
-  }
-}
-
 .home {
   background: #f1fde1;
 }
@@ -210,9 +183,7 @@ nav.sticky .menu-btn {
   padding: 1px;
   margin: 10px auto;
 }
-.topic {
-  text-align: center;
-}
+
 /* About */
 section {
   padding-top: 40px;
@@ -227,7 +198,8 @@ section .content {
 .about .about-details {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Align items to the start */
+  align-items: flex-start;
+  /* Align items to the start */
 }
 
 section .title {
@@ -284,13 +256,19 @@ section .topic {
 }
 
 .about-details .right p {
-  text-align: left; /* Align text to the left */
+  text-align: left;
+  /* Align text to the left */
   color: #0E2431;
-  word-spacing: normal; /* Reset word spacing */
-  letter-spacing: normal; /* Reset letter spacing */
-  line-height: 1.5; /* Adjust line height for better readability */
-  margin: 0; /* Reset margin */
-  padding: 0; /* Reset padding */
+  word-spacing: normal;
+  /* Reset word spacing */
+  letter-spacing: normal;
+  /* Reset letter spacing */
+  line-height: 1.5;
+  /* Adjust line height for better readability */
+  margin: 0;
+  /* Reset margin */
+  padding: 0;
+  /* Reset padding */
 }
 
 section .button {
@@ -315,6 +293,7 @@ section .button button:hover {
   background-color: #fff;
   color: #dcfab9;
 }
+
 /* Rückmeldungen */
 .ruckmeldungen {
   background: #f1fde1;
@@ -391,8 +370,8 @@ section .button button:hover {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  
-  color: #605f5f;
+  background-color: rgba(215, 215, 215, 0.8);
+  color: white;
 }
 
 /* The dot/bullet/indicator container */
@@ -415,7 +394,7 @@ section .button button:hover {
 
 /* Add a background color to the active dot/circle */
 .active, .dot:hover {
-    background-color:#626060;
+  background-color: #626060;
 }
 
 /* Add an italic font style to all quotes */
@@ -470,15 +449,11 @@ q {
   width: 80%;
   text-align: left;
   margin: auto;
-  .fas {
-  color: #3c5c12;
-  }
 }
 
 /*contact2*/
 .contact2 {
   background: #f1fde1;
-
 }
 
 .contact2 .content {
@@ -494,7 +469,6 @@ q {
 .Datenschutzrichtlinie .content {
   margin: 0 auto;
   padding: 70px 0;
-  
 }
 
 /* Footer CSS */
@@ -506,7 +480,7 @@ footer {
 }
 
 footer a:link {
-  color: rgb(222, 230, 213);
+  color: #ffffff;
 }
 
 footer .text span {
@@ -537,21 +511,7 @@ footer .text span a:hover {
   box-shadow: rgba(0, 0, 0, 0.15);
   display: none;
 }
-/* Add this to your SCSS file */
-.datenschutzrichtlinie h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size: 1.2em;
-}
 
-.datenschutzrichtlinie ul {
-  margin-left: 20px;
-  list-style-type: disc;
-}
-
-.datenschutzrichtlinie li {
-  margin-bottom: 5px;
-}
 /* Responsive Media Query */
 @media (max-width: 1190px) {
   section .content {
@@ -653,7 +613,6 @@ footer .text span a:hover {
   .contact .text {
     width: 100%;
   }
-  
 }
 @media (max-width: 500px) {
   .skills-details .boxes .per {

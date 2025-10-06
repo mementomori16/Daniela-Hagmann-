@@ -1,8 +1,9 @@
 {
-  "scripts": {
-    "sass": "sass --watch style.scss:public/style.css",
-    "dev": "live-server"
-  },
+"scripts": {
+  "build": "sass style.scss public/style.css",
+  "watch:sass": "sass --watch style.scss:public/style.css",
+  "dev": "live-server"
+},
   "devDependencies": {
     "live-server": "^1.2.2"
   }

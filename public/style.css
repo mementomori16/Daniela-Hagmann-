@@ -88,7 +88,7 @@ nav.sticky .menu a {
 }
 
 nav.sticky .menu a:hover {
-  color: #27390f;
+  color: #a2dd56;
 }
 
 .navbar .media-icons a {
@@ -455,7 +455,7 @@ q {
 }
 
 .button:hover {
-  background-color: black;
+  background-color: #a2dd56;
 }
 
 /*tantra*/
@@ -473,12 +473,10 @@ q {
   width: 80%;
   text-align: left;
   margin: auto;
-  
-  .fas {
-  color: #3c5c12;
-  }
 }
-
+.contact .text .fas {
+  color: #3c5c12;
+}
 
 /*contact2*/
 .contact2 {
@@ -488,20 +486,6 @@ q {
 .contact2 .content {
   margin: 0 auto;
   padding: 300px 0;
-}
-
-/*Datenschutzrichtlinie*/
-.Datenschutzrichtlinie {
-  background: #f1fde1;
-}
-
-.Datenschutzrichtlinie .content {
-  margin: 0 auto;
-  padding: 70px 0;
-     .fas {
-    color: #355b18;
-  }
- 
 }
 
 /* Footer CSS */
@@ -544,20 +528,30 @@ footer .text span a:hover {
   box-shadow: rgba(0, 0, 0, 0.15);
   display: none;
 }
+
 /* Add this to your SCSS file */
-.datenschutzrichtlinie h3 {
+/* Privacy Policy Styles */
+.Datenschutzrichtlinie {
+  background: #f1fde1;
+  padding: 70px 0;
+}
+.Datenschutzrichtlinie .content {
+  margin: 0 auto;
+}
+.Datenschutzrichtlinie h3 {
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 1.2em;
 }
-
-.datenschutzrichtlinie ul {
+.Datenschutzrichtlinie ul {
   margin-left: 20px;
   list-style-type: disc;
 }
-
-.datenschutzrichtlinie li {
+.Datenschutzrichtlinie li {
   margin-bottom: 5px;
+}
+.Datenschutzrichtlinie .text .fas {
+  color: #355b18;
 }
 
 /* Responsive Media Query */
