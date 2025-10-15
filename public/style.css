@@ -465,188 +465,260 @@ q {
 
 /* Contact */
 .contact .content {
-  margin: 0 auto;
-  padding: 30px 0;
+    /* Use the same spacing as the .about section for consistency */
+    width: 80%;
+    margin: 40px auto; 
+    padding: 30px 0;
+}
+
+/* ------------------------------------------- */
+/* TWO-COLUMN LAYOUT AND STYLING FOR CONTACT */
+/* ------------------------------------------- */
+
+/* 1. Establish the two-column container */
+.contact-details {
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* 2. Left Column (Text/Info) */
+.contact-details .left {
+    width: 45%; 
+    text-align: left;
+    padding-right: 20px; 
+}
+.contact-details .left .topic {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #3c5c12;
+}
+
+
+/* 3. Right Column (Map) */
+.contact-details .right {
+    width: 55%; 
+}
+
+.contact-details .left p .contact-icon { 
+    color: #3c5c12 !important; 
+    font-size: 16px; 
+}
+
+.contact-details .left p {
+    line-height: 1.8; 
+    margin: 0;
+}
+
+.contact-details .right .map-container iframe {
+    width: 100%;
+    height: 350px; 
+    display: block;
+    border: none; 
+    border-radius: 6px; 
 }
 
 .contact .text {
-  width: 80%;
-  text-align: left;
-  margin: auto;
+    width: auto; 
+    text-align: inherit;
+    margin: 0;
 }
-.contact .text .fas {
-  color: #3c5c12;
+
+.contact-icon-green {
+    color: #3c5c12; /* This is your green color */
+}
+
+.contact-details .left .contact-title-text {
+    color: inherit; /* This makes it inherit the default dark text color */
 }
 
 /*contact2*/
 .contact2 {
-  background: #f1fde1;
+    background: #f1fde1;
 }
 
 .contact2 .content {
-  margin: 0 auto;
-  padding: 300px 0;
+    margin: 0 auto;
+    padding: 300px 0;
+}
+
+/*Datenschutzrichtlinie*/
+.Datenschutzrichtlinie {
+    background: #f1fde1;
+}
+
+.Datenschutzrichtlinie .content {
+    margin: 0 auto;
+    padding: 70px 0;
 }
 
 /* Footer CSS */
 footer {
-  background: #3c5c12;
-  padding: 15px 0;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
+    background: #3c5c12;
+    padding: 15px 0;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
 }
 
 footer a:link {
-  color: rgb(222, 230, 213);
+    color: #ffffff;
 }
 
 footer .text span {
-  font-size: 17px;
-  font-weight: 400;
-  color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
 }
 
 footer .text span a {
-  font-weight: 500;
-  color: #FFF;
+    font-weight: 500;
+    color: #FFF;
 }
 
 footer .text span a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* Scroll TO Top Button CSS */
 .scroll-button a {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  color: #fff;
-  background: #3c5c12;
-  padding: 7px 12px;
-  font-size: 18px;
-  border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.15);
-  display: none;
-}
-
-/* Add this to your SCSS file */
-/* Privacy Policy Styles */
-.Datenschutzrichtlinie {
-  background: #f1fde1;
-  padding: 70px 0;
-}
-.Datenschutzrichtlinie .content {
-  margin: 0 auto;
-}
-.Datenschutzrichtlinie h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size: 1.2em;
-}
-.Datenschutzrichtlinie ul {
-  margin-left: 20px;
-  list-style-type: disc;
-}
-.Datenschutzrichtlinie li {
-  margin-bottom: 5px;
-}
-.Datenschutzrichtlinie .text .fas {
-  color: #355b18;
-}
-
-/* Responsive Media Query */
-@media (max-width: 1190px) {
-  section .content {
-    width: 85%;
-  }
-}
-@media (max-width: 1000px) {
-  .about .about-details {
-    justify-content: center;
-    flex-direction: column;
-  }
-  .about .about-details .left {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  .about-details .right {
-    width: 90%;
-    margin: 40px 0;
-  }
-  .services .boxes .box {
-    margin: 20px 0;
-    width: calc(50% - 20px);
-  }
-}
-@media (max-width: 900px) {
-  .about .left img {
-    height: 350px;
-    width: 350px;
-  }
-}
-@media (max-width: 750px) {
-  nav .navbar {
-    width: 90%;
-  }
-  nav .navbar .menu {
     position: fixed;
-    left: -100%;
-    top: 0;
-    background: #3c5c12;
-    height: 100vh;
-    max-width: 400px;
-    width: 100%;
-    padding-top: 60px;
-    flex-direction: column;
-    align-items: center;
-    transition: all 0.5s ease;
-  }
-  .navbar.active .menu {
-    left: 0;
-  }
-  nav .navbar .menu a {
-    font-size: 23px;
-    display: block;
+    bottom: 20px;
+    right: 20px;
     color: #fff;
-    margin: 10px 0;
-  }
-  nav.sticky .menu a:hover {
-    color: #0e1504;
-  }
-  nav .navbar .media-icons {
+    background: #3c5c12;
+    padding: 7px 12px;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15);
     display: none;
-  }
-  nav .menu-btn, .navbar .menu .cancel-btn {
-    display: block;
-  }
-  .skills .skills-details {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .skills-details .text {
-    width: 100%;
-    margin-bottom: 50px;
-  }
-  .skills-details .boxes {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .services .boxes .box {
-    margin: 20px 0;
-    width: 100%;
-  }
-  .contact .text {
-    width: 100%;
-  }
-}
-@media (max-width: 500px) {
-  .skills-details .boxes .per {
-    font-size: 50px;
-    color: #17021a;
-  }
 }
 
-/*# sourceMappingURL=style.css.map */
+/* ------------------------------------------- */
+/* RESPONSIVE MEDIA QUERIES */
+/* ------------------------------------------- */
+
+@media (max-width: 1190px) {
+    section .content {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about .about-details {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .about .about-details .left {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .about-details .right {
+        width: 90%;
+        margin: 40px 0;
+    }
+
+    .services .boxes .box {
+        margin: 20px 0;
+        width: calc(100% / 2 - 20px);
+    }
+    
+    /* CRITICAL: STACKING RULES FOR CONTACT */
+    .contact-details {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .contact-details .left,
+    .contact-details .right {
+        width: 100%; /* Items take full width when stacked */
+        padding-right: 0;
+        margin-bottom: 20px; /* Space between stacked elements */
+    }
+}
+
+@media (max-width: 900px) {
+    .about .left img {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 750px) {
+    nav .navbar {
+        width: 90%;
+    }
+
+    nav .navbar .menu {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        background: #3c5c12;
+        height: 100vh;
+        max-width: 400px;
+        width: 100%;
+        padding-top: 60px;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease;
+    }
+
+    .navbar.active .menu {
+        left: 0;
+    }
+
+    nav .navbar .menu a {
+        font-size: 23px;
+        display: block;
+        color: #fff;
+        margin: 10px 0;
+    }
+
+    nav.sticky .menu a:hover {
+        color: #0e1504;
+    }
+
+    nav .navbar .media-icons {
+        display: none;
+    }
+
+    nav .menu-btn, .navbar .menu .cancel-btn {
+        display: block;
+    }
+
+    .skills .skills-details {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .skills-details .text {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .skills-details .boxes {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .services .boxes .box {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .contact .text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .skills-details .boxes .per {
+        font-size: 50px;
+        color: #17021a;
+    }
+}
