@@ -1,1 +1,1 @@
-Simple static site based on Vanilla Javascript, Node,js and SAAS.
+Simple static site based on HTML, CSS, Vanilla Javascript and Node,js.
